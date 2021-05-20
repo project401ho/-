@@ -1,0 +1,16 @@
+분할 정복
+3가지 과정
+    1. 문제를 더 작은 문제로 분할하는 과정 (divide)
+    2. 각 문제에 대해 구한 답을 원래 문제에 대한 답으로 병합하는 과정 (merge)
+    3. 더이상 답을 분할하지 않고 곧장 풀 수 있는 매우 작은 문제 (base case)
+
+예제: 수열의 빠른 합과 행렬의 빠른 제곱
+    fastSum)
+    funciton fastSum(let n){
+        if(n === 1) return 1
+        if(n % 2 === 1) return fastSum(n-1) + N
+        return 2 * fastSum(n/2) + (n/2) * (n/2)
+    }
+
+    행렬의 거듭제곱
+    카라츠바 알고리즘
